@@ -1,16 +1,3 @@
-/* . Para alcanzar el resultado deseado, considerar:
-● Los input deben medir 500px de ancho y 
-50px de alto.
-● Los textarea deben medir 100px de alto.
-4. Ahora, se buscará mejorar el proyecto, y que se 
-vea como la nueva referencia. Para ello:
-● Sumar un párrafo que diga: “¿Querés que 
-nos contactamos con vos?”
-5. Agregar validación de HTML5 al formulario 
-mediante el uso de required.
-6. Incluir un placeholder al email para guiar al 
-usuario. */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
 
 *{
