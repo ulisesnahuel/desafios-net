@@ -36,7 +36,7 @@ footer{
 
 
 .date-text{
-    font-size: 50pt;
+    font-size: 66px;
     font-weight: 900;
     color: #0a2ff1;
     margin-top: 0;
@@ -48,14 +48,14 @@ footer{
 .black-text{
     color: white;
     background-color: black;
-    font-size: 148pt;
+    font-size: 197px;
     font-weight: 900;
     margin: 0;
     
 }
 
 .friday-text{
-    font-size: 163pt;
+    font-size: 217px;
     font-weight: 900;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -64,7 +64,7 @@ footer{
 .discount-text{
     font-weight: 600;
 
-    font-size: 36pt;
+    font-size: 48px;
     background-color: white;
     color: #0a2ff1;
     padding: 0px 0;
@@ -73,7 +73,7 @@ footer{
 .discount-text span{
     font-weight: 900;
 
-    font-size: 45pt;
+    font-size: 60px;
 }
 .percentage{
     background-color: black;
@@ -84,6 +84,6 @@ footer{
 
     font-weight: 600;
     padding-top: 30px;
-    font-size: 44pt;
+    font-size: 58px;
     margin: 0;
 } 

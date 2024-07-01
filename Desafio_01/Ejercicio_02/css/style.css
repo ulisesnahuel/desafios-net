@@ -9,6 +9,7 @@ body {
     background-color: black;
     color: white;
     height: 100vh;
+    max-width: 100%;
 
 }
 
@@ -25,7 +26,7 @@ body {
 
 
 .date-text{
-    font-size: 50pt;
+    font-size: 66px;
     font-weight: 900;
     margin-top: 10px;
 }
@@ -33,14 +34,14 @@ body {
 .black-text{
     color: black;
     background-color: white;
-    font-size: 148pt;
+    font-size: 197px;
     font-weight: 900;
     margin: 0;
     
 }
 
 .friday-text{
-    font-size: 163pt;
+    font-size: 217px;
     font-weight: 900;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -49,7 +50,7 @@ body {
 .discount-text{
     font-weight: 600;
 
-    font-size: 36pt;
+    font-size: 48px;
     background-color: white;
     color: black;
     padding: 0px 0;
@@ -58,11 +59,11 @@ body {
 .discount-text span{
     font-weight: 900;
 
-    font-size: 45pt;
+    font-size: 60px;
 }
 .miss-text{
     font-weight: 600;
     padding-top: 30px;
-    font-size: 44pt;
+    font-size: 58px;
     margin: 0;
 }
