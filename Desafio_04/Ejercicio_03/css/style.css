@@ -9,14 +9,21 @@ body {
     }
 
 
-
-header {
-    background-image: url('../image/M4\ -\ Desafío3_img-header.png'); 
-    background-size:cover;
-    height: 500px; 
-    width: 100%; 
-    }
     
+header {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el header */
+}
 body,button { font-family: 'Roboto', sans-serif;}
 
 
