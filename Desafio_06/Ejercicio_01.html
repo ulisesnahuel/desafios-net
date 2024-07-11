@@ -14,15 +14,14 @@
     <input type="number" id="venta" step="0.01">
     <label for="variable">Ingrese el costo varaible:</label>
     <input type="number" id="variable" step="0.01">
-    <button onclick="PuntoEquilibrio()">Calcular</button>
+    <button onclick="Cv()">Calcular</button>
     <p id="result"></p>
     <script>
 
-        function PuntoEquilibrio() {
+        function Cv() {
             const costoFijo = parseFloat(document.getElementById('fijo').value);
             const precioVenta = parseFloat(document.getElementById('venta').value);
             const costoVariable = parseFloat(document.getElementById('variable').value);
-            // Verificar si los valores ingresados son números
             if (isNaN(costoFijo) || isNaN(precioVenta) || isNaN(costoVariable)) {
                 alert("Por favor, ingrese valores numéricos válidos.");
             } else if (precioVenta <= costoVariable) {
