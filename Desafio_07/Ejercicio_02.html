@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7</title>
+</head>
+<body>
+    <h1>Inicio de Sesion</h1>
+    <form action="#" onsubmit="return Login()">
+        <label for="usuario" req>Usuario</label>
+        <input required type="text" id="usuario">
+        <label for="clave">Clave</label>
+        <input required type="password" id="clave">
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <!-- <h1>Inicio de Sesion</h1>
+    <label for="usuario" req>Usuario</label>
+    <input required type="text" id="usuario">
+    <label for="clave">Clave</label>
+    <input required type="password" id="clave">
+    <button onclick="Login()">Iniciar Sesion</button> -->
+    <script>
+
+        function Login() {
+            const usuario = document.getElementById('usuario').value;
+            const clave = document.getElementById('clave').value;
+
+            if (usuario == "admin" && clave == "1234"){
+                
+                alert(`Bienvenido ${usuario}`);
+                
+            }else{
+                alert("Credenciales invalidas");
+            }
+        }
+    </script>
+</body>
+</html>

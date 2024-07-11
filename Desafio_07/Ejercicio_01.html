@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7</title>
+</head>
+<body>
+    <h1>Verificación de edad</h1>
+    <label for="edad">Ingrese su edad</label>
+    <input type="number" id="edad" >
+    <button onclick="ValidarEdad()">Verificar</button>
+    <script>
+
+        function ValidarEdad() {
+            const edad = parseInt(document.getElementById('edad').value);
+
+            if (isNaN(edad)) {
+                alert("Por favor, ingrese valores numéricos válidos.");
+            } else if (edad < 18 ) {
+                alert("El usuario es menor de edad. No puede ingresar");
+            } else {
+                alert("Bienvenido!! =)");
+            }
+        }
+    </script>
+</body>
+</html>
