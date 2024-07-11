@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6</title>
+</head>
+
+<body>
+    <h1>Modelo punto de equilibrio</h1>
+    <label for="fijo">Ingrese el costo fijo:</label>
+    <input type="number" id="fijo" step="0.01">
+    <label for="venta">Ingrese el precio de venta:</label>
+    <input type="number" id="venta" step="0.01">
+    <label for="variable">Ingrese el costo varaible:</label>
+    <input type="number" id="variable" step="0.01">
+    <button onclick="PuntoEquilibrio()">Calcular</button>
+    <p id="result"></p>
+    <script>
+
+        function PuntoEquilibrio() {
+            const costoFijo = parseFloat(document.getElementById('fijo').value);
+            const precioVenta = parseFloat(document.getElementById('venta').value);
+            const costoVariable = parseFloat(document.getElementById('variable').value);
+            // Verificar si los valores ingresados son números
+            if (isNaN(costoFijo) || isNaN(precioVenta) || isNaN(costoVariable)) {
+                alert("Por favor, ingrese valores numéricos válidos.");
+            } else if (precioVenta <= costoVariable) {
+                alert("El precio de venta debe ser mayor que el costo variable.");
+            } else {
+                let cv = costoFijo / (precioVenta - costoVariable);
+                document.getElementById('result').innerHTML =
+                    `El punto de equilibrio es $${cv.toFixed(2)}`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6</title>
+</head>
+<body>
+    <h1>Modelo de presupuesto 50-30-20</h1>
+    <label for="ingreso">Ingrese su total:</label>
+    <input type="number" id="ingreso" step="0.01">
+    <button onclick="CalcularPresupuesto()">Calcular</button>
+    <p id="result"></p>
+    <script>
+        function CalcularPresupuesto(){
+            const ingreso = parseFloat(document.getElementById('ingreso').value);
+
+            if (isNaN(ingreso) || ingreso <= 0) {
+                alert("Ingrese un número válido y mayuor que 0.");
+                return;
+            }
+            const gastosNecesarios = ingreso * 0.50;
+            const gastosOpcionales = ingreso * 0.30;
+            const ahorro = ingreso * 0.20;
+
+            document.getElementById('result').innerHTML = `
+                Gastos necesarios: $${gastosNecesarios}<br>
+                Gastos opcionales: $${gastosOpcionales}<br>
+                Ahorro e inversión: $${ahorro}
+            `;
+        }
+    </script>
+    
+</body>
+</html>
